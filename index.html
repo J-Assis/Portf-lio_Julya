@@ -3,114 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio Perfeito</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mariana Napolitani - Creative Portfolio</title>
+    <!-- Link para ícones (para a seção de contato) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo">SeuNome<span>.</span></div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato" class="btn-contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Olá, eu sou o <span class="highlight">Seu Nome</span></h1>
-            <p>Desenvolvedor Frontend & Designer UI/UX focado em criar experiências digitais incríveis.</p>
-            <div class="hero-buttons">
-                <a href="#projetos" class="btn-primary">Ver Projetos</a>
-                <a href="#contato" class="btn-secondary">Vamos conversar</a>
+    <div class="container">
+        
+        <!-- CABEÇALHO / HERO -->
+        <header class="header grid">
+            <div class="header-left">
+                <p class="slogan-top">DESIGNING MEANINGFUL DIGITAL EXPERIENCES</p>
+                <div class="main-logo-container">
+                    <img src="imagens/mn-logo.png" alt="MN Logo" class="mn-logo"> <!-- Substitua pelo seu logo -->
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="header-right text-right">
+                <p class="portfolio-year">PORTFOLIO <br> 2026</p>
+            </div>
+        </header>
 
-    <section id="sobre" class="about">
-        <h2>Sobre Mim</h2>
-        <div class="about-grid">
-            <div class="about-text">
-                <p>Sou um profissional apaixonado por tecnologia e design. Adoro transformar problemas complexos em interfaces simples, bonitas e intuitivas. Sempre buscando aprender novas tecnologias e melhorar minhas habilidades.</p>
+        <section class="hero grid">
+            <div class="hero-text-col">
+                <h1>
+                    MARIANA <br>
+                    NAPOLITANI
+                </h1>
+                <p class="hero-role">UI/UX DESIGNER & CREATIVE THINKER</p>
+                <p class="hero-description">I craft digital experiences that are beautiful, intuitive, and built with purpose.</p>
+                <div class="hero-underline"></div>
+            </div>
+            <div class="hero-image-col">
+                <div class="photo-wrapper">
+                    <!-- Foto em P&B com círculo verde atrás -->
+                    <img src="imagens/mariana-photo.jpg" alt="Mariana Napolitani" class="hero-photo">
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- PROJETOS SELECIONADOS -->
+        <section id="projetos" class="projects">
+            <div class="projects-header grid">
+                <div class="projects-title-col">
+                    <h2>SELECTED PROJECTS</h2>
+                    <p>A selection of work that reflects strategy, clarity, and impact.</p>
+                </div>
+                <div class="projects-link-col text-right">
+                    <a href="#" class="view-all">VIEW ALL PROJECTS <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="projects-grid grid-3">
                 
-                <h3>Minhas Skills</h3>
-                <div class="skills-tags">
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>JavaScript</span>
-                    <span>React</span>
-                    <span>UI/UX Design</span>
-                    <span>Git & GitHub</span>
-                </div>
-            </div>
-        </div>
-    </section>
+                <!-- Projeto 1 -->
+                <article class="project-card">
+                    <div class="project-meta">
+                        <span class="project-number">01</span>
+                        <div class="project-title-meta">
+                            <h3>LUNAR</h3>
+                            <p>Fintech Dashboard</p>
+                        </div>
+                    </div>
+                    <div class="project-image-wrapper">
+                        <!-- Substitua pelo caminho da imagem real -->
+                        <img src="imagens/projetos/lunar-dash.jpg" alt="Lunar Fintech Dashboard" class="project-image">
+                    </div>
+                </article>
 
-    <section id="projetos" class="projects">
-        <h2>Projetos Em Destaque</h2>
-        <div class="projects-grid">
+                <!-- Projeto 2 -->
+                <article class="project-card card-padded">
+                    <div class="project-meta">
+                        <span class="project-number">02</span>
+                        <div class="project-title-meta">
+                            <h3>NEXORA</h3>
+                            <p>Product Website</p>
+                        </div>
+                    </div>
+                    <div class="project-image-wrapper text-center">
+                        <!-- Imagem do tablet centralizada -->
+                        <img src="imagens/projetos/nexora-site.jpg" alt="Nexora Product Website" class="project-image-full-width">
+                    </div>
+                </article>
+
+                <!-- Projeto 3 -->
+                <article class="project-card">
+                    <div class="project-meta">
+                        <span class="project-number">03</span>
+                        <div class="project-title-meta">
+                            <h3>AURORA</h3>
+                            <p>Mobile Experience</p>
+                        </div>
+                    </div>
+                    <div class="project-image-wrapper">
+                        <!-- Imagem do celular -->
+                        <img src="imagens/projetos/aurora-mobile.jpg" alt="Aurora Mobile Experience" class="project-image">
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- SKILLS E IMPACTO -->
+        <section id="sobre" class="skills-impact grid">
+            <div class="skills-col">
+                <h2>SKILLS & TOOLKIT</h2>
+                <ul class="skills-list">
+                    <li class="skill-item">
+                        <div class="skill-info">
+                            <i class="fa-regular fa-circle"></i>
+                            <span>USER RESEARCH</span>
+                        </div>
+                        <div class="skill-level-bar"><div class="skill-level-fill" style="width: 90%;"></div></div>
+                        <span class="skill-percent">90%</span>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-info">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <span>UI / UX DESIGN</span>
+                        </div>
+                        <div class="skill-level-bar"><div class="skill-level-fill" style="width: 95%;"></div></div>
+                        <span class="skill-percent">95%</span>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-info">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <span>PROTOTYPING</span>
+                        </div>
+                        <div class="skill-level-bar"><div class="skill-level-fill" style="width: 85%;"></div></div>
+                        <span class="skill-percent">85%</span>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-info">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <span>DESIGN SYSTEMS</span>
+                        </div>
+                        <div class="skill-level-bar"><div class="skill-level-fill" style="width: 90%;"></div></div>
+                        <span class="skill-percent">90%</span>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-info">
+                            <i class="fa-regular fa-images"></i>
+                            <span>VISUAL DESIGN</span>
+                        </div>
+                        <div class="skill-level-bar"><div class="skill-level-fill" style="width: 85%;"></div></div>
+                        <span class="skill-percent">85%</span>
+                    </li>
+                </ul>
+            </div>
             
-            <div class="project-card">
-                <div class="project-image" style="background-color: #2a2d3e;">
-                    <i class="fa-solid fa-code fa-3x" style="color: var(--primary-color);"></i>
+            <div class="impact-col">
+                <h2>IMPACT & EXPERIENCE</h2>
+                <div class="stats-grid grid-3">
+                    <div class="stat-item">
+                        <p class="stat-number">5+</p>
+                        <p class="stat-label">YEARS OF EXPERIENCE</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-number">40+</p>
+                        <p class="stat-label">PROJECTS COMPLETED</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-number">25+</p>
+                        <p class="stat-label">HAPPY CLIENTS</p>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <h3>Nome do Projeto 1</h3>
-                    <p>Uma breve descrição do projeto, quais tecnologias foram usadas e qual problema ele resolveu.</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
-                        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                <blockquote class="testimonial">
+                    <i class="fa-solid fa-quote-left testimonial-icon"></i>
+                    <div class="testimonial-content">
+                        <p>Design is not just what it looks like and feels like. Design is how it works.</p>
+                        <cite>STEVE JOBS</cite>
+                    </div>
+                </blockquote>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <!-- CONTATO -->
+        <footer id="contato" class="footer grid">
+            <div class="contact-prompt-col">
+                <h2>LET'S CONNECT</h2>
+                <p>I'm currently available for freelance and full-time opportunities.</p>
+            </div>
+            <div class="contact-info-col">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <p class="contact-label">EMAIL</p>
+                        <p class="contact-value">hello@mariananapolitani.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-globe"></i>
+                    <div>
+                        <p class="contact-label">WEBSITE</p>
+                        <p class="contact-value">mariananapolitani.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <p class="contact-label">LOCATION</p>
+                        <p class="contact-value">Anywhere in the world</p>
                     </div>
                 </div>
             </div>
-
-            <div class="project-card">
-                <div class="project-image" style="background-color: #2a2d3e;">
-                    <i class="fa-solid fa-laptop-code fa-3x" style="color: var(--primary-color);"></i>
-                </div>
-                <div class="project-info">
-                    <h3>Nome do Projeto 2</h3>
-                    <p>Uma breve descrição do projeto, quais tecnologias foram usadas e qual problema ele resolveu.</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
-                        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-                    </div>
+            <div class="contact-cta-col">
+                <div class="cta-box">
+                    <p>LET'S BUILD SOMETHING GREAT TOGETHER</p>
+                    <i class="fa-solid fa-arrow-right cta-arrow"></i>
                 </div>
             </div>
+        </footer>
 
-            <div class="project-card">
-                <div class="project-image" style="background-color: #2a2d3e;">
-                    <i class="fa-solid fa-mobile-screen-button fa-3x" style="color: var(--primary-color);"></i>
-                </div>
-                <div class="project-info">
-                    <h3>Nome do Projeto 3</h3>
-                    <p>Uma breve descrição do projeto, quais tecnologias foram usadas e qual problema ele resolveu.</p>
-                    <div class="project-links">
-                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
-                        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <footer id="contato" class="footer">
-        <h2>Vamos trabalhar juntos?</h2>
-        <p>Estou sempre aberto a novos projetos, oportunidades e parcerias.</p>
-        
-        <div class="social-links">
-            <a href="mailto:seuemail@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://linkedin.com/in/seuusuario" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/seuusuario" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </div>
-        
-        <p class="copyright">&copy; 2026 Seu Nome. Todos os direitos reservados.</p>
-    </footer>
+    </div>
 
 </body>
 </html>
